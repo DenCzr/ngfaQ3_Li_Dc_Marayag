@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="tt"></p>
+    <script>
+        var no = prompt("Input a number: ");
+        var nt = prompt("Input a second number: ");
+        var a = no - 0.1 + 0.1;
+        var b = nt - 0.1 + 0.1;
+        var total = a + b;
+        document.getElementById("tt").innerHTML = no + " added with " + nt + " results: " + total;
+        
+        if(a > b){
+            alert(a + " is greater than " + b + ".")
+        }
+        else{
+            alert(b + " is greater than " + a + ".")
+        }
+
+        var choice = (a-=b);
+        alert(choice + " is the first number inputted to be subtracted by the second input. ")
+        var choice = (a&&b);
+        alert(choice + " is the second number inputted.")
+
+
+        
+    </script>
+</body>
+</html>
